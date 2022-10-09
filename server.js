@@ -4,7 +4,7 @@ const fs = require('fs') // this engine requires the fs module like we did Satur
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
-const Vegetable = require('./models/vegetable')
+const Vegetable = require('./models/vegetables')
 
 
 // Create our express app
@@ -118,4 +118,5 @@ app.get('/vegetables/:id', (req, res) => {
 app.listen(3033, () => {
     console.log('Listening on Port 3033')
 })
+
 
